@@ -9,11 +9,6 @@ pipeline {
   }
 
   stages {
-    stage('Initate npm') {
-      steps {
-        sh 'npm init'
-      }
-    }
     stage('Install dependencies') {
       steps {
         sh 'npm install'
